@@ -1,11 +1,35 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>Shop</title>
+	<meta charset="utf-8">
+	<title>Shopping</title>
 </head>
 
 <body>
+	<div>
+		<input type="checkbox" id="important" name="important">
+		<label for="important"> Is important </label><br>
+		<input type="checkbox" id="groceries" name="groceries">
+		<label for="groceries"> Can be bought in groceries </label><br>
+		<br>
+		<label for="item">Item to buy:</label>
+		<input type="text" id="item" name="item">
+		<button onclick="addItem()">Add</button>
+	</div>
+
+		<p>Shopping list:</p>
+		<ul id="shopping list">
+			
+		</ul>
+	
+	<div>
+		<label for="index">Remove item:</label>
+		<input type="number" id="index" name="index">
+		<button onclick="removeItem()">Remove</button>
+	</div>
+		
+	<script src="interactive.js"></script>
+	
 </body>
 
-</html>
+</html> 
